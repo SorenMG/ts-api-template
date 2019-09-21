@@ -1,0 +1,41 @@
+{
+   "name": "ts-rest-api-template",
+   "version": "1.0.0",
+   "description": "A REST api example using typeorm",
+   "main": "src/app.ts",
+   "scripts": {
+      "build": "tsc",
+      "start": "nodemon"
+   },
+   "author": "Søren M. G. Hansen",
+   "license": "MIT",
+   "devDependencies": {
+      "@types/bcryptjs": "^2.4.2",
+      "@types/body-parser": "^1.17.1",
+      "@types/cors": "^2.8.6",
+      "@types/helmet": "0.0.44",
+      "@types/jsonwebtoken": "^8.3.3",
+      "@types/node": "^8.0.29",
+      "morgan": "^1.9.1",
+      "nodemon": "^1.19.2",
+      "typescript": "3.3.3333"
+   },
+   "dependencies": {
+      "agenda": "^2.1.0",
+      "bcryptjs": "^2.4.3",
+      "body-parser": "^1.18.1",
+      "class-validator": "^0.10.0",
+      "cors": "^2.8.5",
+      "dotenv": "^8.1.0",
+      "express": "^4.15.4",
+      "express-jwt": "^5.3.1",
+      "helmet": "^3.21.0",
+      "jsonwebtoken": "^8.5.1",
+      "mongodb": "^3.0.8",
+      "mongoose": "^5.7.1",
+      "reflect-metadata": "^0.1.10",
+      "ts-node": "^8.4.1",
+      "typedi": "^0.8.0",
+      "winston": "^3.2.1"
+   }
+}
