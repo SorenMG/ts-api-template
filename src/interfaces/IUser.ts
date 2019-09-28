@@ -2,9 +2,9 @@ export interface IUser {
   _id: string;
   name: string;
   email: string;
-  password: string;
+  hash: string;
   salt: string;
-  token: string;
+  // token: string;
 }
 
 export interface IUserInputDTO {

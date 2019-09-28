@@ -1,5 +1,6 @@
 {
    "compilerOptions": {
+     "target": "es2017",
       "lib": [
         "es2017",
         "esnext.asynciterable"
@@ -9,6 +10,7 @@
         "./src/types"
       ],
       "allowSyntheticDefaultImports": true,
+      "forceConsistentCasingInFileNames": true,
       "target": "es2017",
       "module": "commonjs",
       "moduleResolution": "node",

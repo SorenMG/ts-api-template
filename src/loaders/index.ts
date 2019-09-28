@@ -10,11 +10,16 @@ export default async ({ expressApp }) => {
   });
   Logger.info('DB loaded and connected! 🙌');
 
+  const userModel = {
+    name: 'userModel',
+    model: require('../models/user').default,
+  };
+
   // Load model into dependency injector
   const { agenda } = await dependencyInjectorLoader({
     mongoConnection,
     models: [
-      // userModel,
+      userModel,
     ],
   });
   Logger.info('Dependency Injector loaded 🙌');

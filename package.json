@@ -1,11 +1,15 @@
 {
    "name": "ts-rest-api-template",
    "version": "1.0.0",
-   "description": "A REST api example using typeorm",
+   "description": "A REST api example using mongoose, express and typescript",
    "main": "src/app.ts",
    "scripts": {
       "build": "tsc",
       "start": "nodemon"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/soren1146/ts-rest-api-template.git"
    },
    "author": "Søren M. G. Hansen",
    "license": "MIT",
@@ -21,12 +25,17 @@
       "typescript": "3.3.3333"
    },
    "dependencies": {
+      "@decorators/di": "^1.0.2",
+      "@decorators/express": "^2.3.0",
       "agenda": "^2.1.0",
-      "bcryptjs": "^2.4.3",
+      "argon2": "^0.24.1",
       "body-parser": "^1.18.1",
+      "celebrate": "^10.0.1",
       "class-validator": "^0.10.0",
       "cors": "^2.8.5",
+      "crypto": "^1.0.1",
       "dotenv": "^8.1.0",
+      "event-dispatch": "^0.4.1",
       "express": "^4.15.4",
       "express-jwt": "^5.3.1",
       "helmet": "^3.21.0",

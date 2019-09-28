@@ -1,6 +1,6 @@
 import { IUser } from '../interfaces/IUser';
 import mongoose from 'mongoose';
-import crypto from 'bcryptjs';
+// import crypto from 'crypto';
 import { Container } from 'typedi';
 
 const User = new mongoose.Schema({
@@ -45,18 +45,18 @@ const User = new mongoose.Schema({
 });
 
 // Set password method
-User.methods.setPassword = (password) => {
-  const Logger = Container.get('logger');
-  crypto.genSalt(10).then(salt => {
-    this.salt = salt;
-
-    crypto.hash(password, salt).then(hash => {
-      this.hash = hash;
-    });
-  }).catch(err => {
-    Logger.error('🔥 Password could not be set: %o', err);
-    throw err;
-  });
-}
+// User.methods.setPassword = (password) => {
+//   const Logger = Container.get('logger');
+//   crypto.genSalt(10).then(salt => {
+//     this.salt = salt;
+//
+//     crypto.hash(password, salt).then(hash => {
+//       this.hash = hash;
+//     });
+//   }).catch(err => {
+//     Logger.error('🔥 Password could not be set: %o', err);
+//     throw err;
+//   });
+// }
 
 export default mongoose.model<IUser & mongoose.Document>('User', User);

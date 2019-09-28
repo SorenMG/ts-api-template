@@ -9,11 +9,10 @@ import { IUser } from '../../interfaces/IUser';
    const Logger = Container.get('logger');
    try {
      const UserModel = Container.get('userModel') as mongoose.Model<IUser & mongoose.Document>;
-     const userRecord = UserModel.findById(req.token._id);
-     if (!userRecord) {
+     const currentUser = await UserModel.findById(req.token._id).lean();
+     if (!currentUser) {
        return res.sendStatus(401);
      }
-     const currentUser = userRecord.toObject();
      Reflect.deleteProperty(currentUser, 'password');
      Reflect.deleteProperty(currentUser, 'salt');
      req.currentUser = currentUser;

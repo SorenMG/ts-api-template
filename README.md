@@ -1,7 +1,16 @@
-# Awesome Project Build with TypeORM
+# REST API example using Typescript
+This example makes making an API fast with its already built user registration, authentication and user lookup. It uses the 3 layer architecture with a controller layer, service layer and a data access layer. It is heavily inspired by **santiq's** repository [Bulletproof nodejs](https://github.com/santiq/bulletproof-nodejs)
 
-Steps to run this project:
+# Installation
+To install, simply clone the repository and run
+```
+npm install
+```
+In the given directory. After this, run
+```
+npm start
+```
+In order to boot the server.
 
-1. Run `npm i` command
-2. Setup database settings inside `ormconfig.json` file
-3. Run `npm start` command
+# Contributions
+Please suggest enhancements as new issue reports on this repository. 🙌
